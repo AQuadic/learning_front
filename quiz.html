@@ -1121,8 +1121,10 @@
 
           <div class="questions">
             <div class="question">
+               <div class="titleQuestion">
                 <h3>Quiz Question</h3>
                 <h4>With decreasing attention spans, what type of content is best used to convey a lot of content in a short period of time?</h4>
+               </div>
                 <ul>
                     <li>
                         <div class="form-check">
@@ -1132,7 +1134,7 @@
                             </label>
                           </div>
                     </li>
-                    <li>
+                    <li class="true">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
@@ -1148,7 +1150,7 @@
                             </label>
                           </div>
                     </li>
-                    <li>
+                    <li >
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
@@ -1158,7 +1160,87 @@
                     </li>
                 </ul>
             </div>
-            <input type="submit" class="btn_page">
+            <div class="question">
+              <div class="titleQuestion">
+               <h3>Quiz Question</h3>
+               <h4>With decreasing attention spans, what type of content is best used to convey a lot of content in a short period of time?</h4>
+              </div>
+               <ul>
+                   <li>
+                       <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                               Clickbait
+                           </label>
+                         </div>
+                   </li>
+                   <li >
+                       <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                               Clickbait
+                           </label>
+                         </div>
+                   </li>
+                   <li class="false">
+                       <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                               Clickbait
+                           </label>
+                         </div>
+                   </li>
+                   <li >
+                       <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                               Clickbait
+                           </label>
+                         </div>
+                   </li>
+               </ul>
+           </div>
+           <div class="question">
+            <div class="titleQuestion">
+             <h3>Quiz Question</h3>
+             <h4>With decreasing attention spans, what type of content is best used to convey a lot of content in a short period of time?</h4>
+            </div>
+             <ul>
+                 <li class="true">
+                     <div class="form-check">
+                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                         <label class="form-check-label" for="flexRadioDefault1">
+                             Clickbait
+                         </label>
+                       </div>
+                 </li>
+                 <li >
+                     <div class="form-check">
+                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                         <label class="form-check-label" for="flexRadioDefault1">
+                             Clickbait
+                         </label>
+                       </div>
+                 </li>
+                 <li>
+                     <div class="form-check">
+                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                         <label class="form-check-label" for="flexRadioDefault1">
+                             Clickbait
+                         </label>
+                       </div>
+                 </li>
+                 <li >
+                     <div class="form-check">
+                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                         <label class="form-check-label" for="flexRadioDefault1">
+                             Clickbait
+                         </label>
+                       </div>
+                 </li>
+             </ul>
+         </div>
+            <input type="button" class="btn_page" value="Submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
           </div>
         </div>
         <div class="part1">
@@ -1431,6 +1513,34 @@
         </div>
       </div>
     </footer>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" >
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/thank-you.webp" alt="thank-you">
+        <h2>Thanks for completing that!</h2>
+        <a href="#" class="btn_page">Continue</a>
+      </div>
+      <div class="modal-footer" style="display: none;">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/popper.min.js"></script>

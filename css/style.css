@@ -3212,7 +3212,71 @@ color: #686868;
 .videoCourse .headVideo .part1 .contantTwo ul li .infoChapter .form-check{}
 .videoCourse .headVideo .part1 .contantTwo ul li .btn_page2{}
 
+/*question*/
+.videoCourse .headVideo .part2 .questions{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.videoCourse .headVideo .part2 .questions .btn_page{
+  width: 228px;
+  height: 50px;
+}
+.videoCourse .headVideo .part2 .questions .question{
+  padding: 20px 0px 0px;
+  background: #FFFFFF;
+border: 1px solid #D1D1D1;
+}
+.videoCourse .headVideo .part2 .questions .question .titleQuestion{
+padding: 0px 18px ;
+}
+.videoCourse .headVideo .part2 .questions .question h3{
+  font-size: 16px;
+line-height: 21px;
+}
+.videoCourse .headVideo .part2 .questions .question h4{
+  font-size: 16px;
+line-height: 21px;
+font-family: "DM Sans3";
 
+}
+.videoCourse .headVideo .part2 .questions .question ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  flex-direction: column;
+
+}
+.videoCourse .headVideo .part2 .questions .question ul li{
+  padding: 16px 18px;
+  border-top: 1px solid #D1D1D1;
+}
+.videoCourse .headVideo .part2 .questions .question ul li.true{
+  border:  1px solid #018D29;
+  background-image: url('../images/true2.svg');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center right 30px;
+}
+.videoCourse .headVideo .part2 .questions .question ul li.true::before{
+ 
+}
+.videoCourse .headVideo .part2 .questions .question ul li.false{
+  border:  1px solid #D70808;
+  background-image: url('../images/false.svg');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center right 30px;
+}
+.videoCourse .headVideo .part2 .questions .question ul li label{
+  font-size: 16px;
+font-family: "DM Sans3";
+line-height: 21px;
+}
+.videoCourse .headVideo .part2 .questions .question ul li input{
+  width: 18px;
+  height: 18px;
+}
 
 @media(max-width:992px){
   .videoCourse .headVideo.open {
@@ -3222,6 +3286,93 @@ color: #686868;
   
     padding: 6px 0px 0px 0px;
 }
+.videoCourse .endVideo button {
+  gap: 6px;
+  width: 141px;
+  height: 46px;
+}
+.videoCourse .endVideo button p {
+  font-size: 16px;
+ 
+}
+.videoCourse .endVideo button img {
+  width: 16px;
+}
+}
+@media(max-width:600px){
+  
+.videoCourse .headVideo .part2 p{
+  font-size: 16px;
+}
+.videoCourse .headVideo .part2 ul li {
+  font-size: 16px;
+}
+.videoCourse .headVideo .part2 h2 {
+  font-size: 16px;
+}
 }
 /*===========================================end videoCourse ==================*/
+/*modal*/
+.modal{
+ 
+ 
+}
+.modal-dialog .modal-content{
+ background: #FFFFFF;
+border-radius: 20px;
+width: 100%;
+min-width: 670px;
+ padding: 14px ;
+}
+.modal-header{
+  border: none;
+  justify-content: end;
+  padding: 0;
+}
+.modal .btn-close{
+  margin: 0;
+}
+.modal-dialog .modal-content img{
+  width: 256px;
+height: auto;
+max-width: 70%;
+display: block;
+margin: 0px auto 16px;
+}
+.modal-dialog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog .modal-content h2{
+  font-size: 20px;
+line-height: 26px;
+text-align: center;
+margin: 0 ;
+}
+.modal-dialog .modal-content .btn_page{
+  width: 228px;
+height: 50px;
+margin: 48px auto 30px;
+}
+.modal-body{
+  padding: 0;
+}
+@media(max-width:768px){
+  
+  .modal-dialog .modal-content{
+   width: 670px;
+   min-width: 100%;
+   
+   }
+   .modal-dialog .modal-content .btn_page{
+   
+  margin: 30px auto 30px;
+  }
+  .modal-dialog .modal-content h2 {
+    font-size: 18px;
+   
+}
+  }
 /*end style*/
