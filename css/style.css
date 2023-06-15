@@ -64,6 +64,15 @@ html::-webkit-scrollbar-track {
 .m90 {
   margin-bottom: 90px;
 }
+@keyframes vibrate {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-2px, -2px); }
+  40% { transform: translate(2px, 2px); }
+  60% { transform: translate(-2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0, 0); }
+}
+
 .btn_page {
   background: var(--main_color);
   border-radius: 10px;
@@ -76,7 +85,19 @@ html::-webkit-scrollbar-track {
   transition: 0.5s;
   padding: 8px 0px;
   border: 1px solid #1f2265;
+  animation: vibrate 0.5s linear 5s infinite;
 }
+
+.btn_page:not(:hover) {
+  animation-delay: 1s;
+}
+
+/* Pause the run animation on hover */
+.btn_page:hover {
+  animation-play-state: paused;
+}
+
+
 .btn_page:hover {
   color: var(--main_color);
   background-color: white !important;
