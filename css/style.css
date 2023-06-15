@@ -85,7 +85,7 @@ html::-webkit-scrollbar-track {
   transition: 0.5s;
   padding: 8px 0px;
   border: 1px solid #1f2265;
-  animation: vibrate 0.5s linear 5s infinite;
+ 
 }
 
 .btn_page:not(:hover) {
@@ -230,6 +230,7 @@ html[dir="rtl"] .headtitle::before {
   width: 366px;
   height: 60px;
   margin-bottom: 24px;
+  animation: vibrate 0.5s linear 5s infinite;
 }
 .about .allAbout .part1 .trusted {
 }
