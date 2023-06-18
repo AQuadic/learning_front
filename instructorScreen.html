@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="find help" />
+    <meta name="keywords" content="find help" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+   
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+    
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="phone_nav ac_nav">
+          <!-- if found user ->"dropdown" disblay:block and login btn disblay:none  -->
+          <div class="dropdown" style="position: relative; display: none">
+            <h4
+              class="dropdown-toggle nav_btn btn_page2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Hi, Donia
+            </h4>
+
+            <ul class="dropdown-menu myAcc">
+              <li>
+                <a class="dropdown-item" href="account.html">
+                  <img src="./images/account.webp" alt="account" />
+                  <p>Personal Information</p>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="password.html">
+                  <img src="./images/logoPass.webp" alt="logoPass" />
+                  <p>Password</p>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="activeSessions.html">
+                  <img src="./images/active.webp" alt="active" />
+                  <p>Active Sessions</p>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="signIn.html">
+                  <img src="./images/logOut.webp" alt="logOut" />
+                  <p>Logout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        <a href="signIn.html" class="btn_page2"> Login</a>
+         
+        </div>
+   <a class="navbar-brand" href="index.html">
+           <img src="./images/Logo.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+
+        <div class="right_nav ac_nav" style="justify-content: flex-end" id="">
+        
+
+          
+             
+            <a href="signIn.html" class="btn_page2">Log In</a>
+             <a href="signUp.html" class="btn_page">Sign Up</a>
+          <!-- if found user display:block else display:none -->
+          <div class="dropdown" style="position: relative; display: none">
+            <h4
+              class="dropdown-toggle nav_btn btn_page2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Hi, Donia
+            </h4>
+
+            <ul class="dropdown-menu myAcc">
+              <li>
+                <a class="dropdown-item" href="account.html">
+                  <img src="./images/account.webp" alt="account" />
+                  <p>Personal Information</p>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="password.html">
+                  <img src="./images/logoPass.webp" alt="logoPass" />
+                  <p>Password</p>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="activeSessions.html">
+                  <img src="./images/active.webp" alt="active" />
+                  <p>Active Sessions</p>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="signIn.html">
+                  <img src="./images/logOut.webp" alt="logOut" />
+                  <p>Logout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="lang">
+            <img src="./images/lang.webp" class="lang" alt="lang" />
+            <p>En</p>
+          </button>
+        </div>
+
+        <div class="collapse col-phone" id="navbarSupportedContent">
+          <div class="right_nav ac_nav" id="">
+            <a href="signUp.html" class="btn_page">Sign Up</a>
+            <button class="lang">
+                <img src="./images/lang.webp" class="lang" alt="lang" />
+                <p>En</p>
+              </button>
+          </div>
+         
+        </div>
+      </div>
+      
+    </nav>
+    <section class="instructor_head m80">
+      <h1>Design Thinking for Beginners: Develop Innovative Ideas</h1>
+      <p>
+        Apply the five-step design thinking process to identify and creatively
+        solve problems using a human-centered approach.
+      </p>
+      <a href="" class="btn_page3">Start Now</a>
+    </section>
+
+    <section class="instructor_about container m80">
+      <div class="content">
+        <div class="instructor_user">
+          <img src="./images/persone.webp" alt="user" />
+          <h2>Muhammed Ahmed</h2>
+          <p>UI UX Designer</p>
+        </div>
+        <div class="instructor_info">
+          <h3>INSTRUCTOR</h3>
+          <p>
+            Hello ,i'm Muhammed Ahmed ,UI/UX Designer and ui Developer .I have
+            worked in web interface design and mobile application design .I also
+            worked in the graphic design field for several years.., also worked
+            as an instructor ,, explaining the design approach and user
+            experience.. I have a passion for simplifying the science of design
+            and user experience and presenting it to students in the simplest
+            form.. 
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="instructor_about instructor_about2 m80">
+        <div class="container">
+            <div class="content">
+                <div class="part1">
+                    <img src="./images/about1.webp" alt="about1">
+                </div>
+                  <div class="instructor_info">
+                    <h3>TITLE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                </div>
+        </div>
+       
+      </section>
+      <section class="instructor_about container  m80">
+        
+            <div class="content">
+                <div class="part1">
+                    <img src="./images/about2.webp" alt="about1">
+                </div>
+                  <div class="instructor_info">
+                    <h3>TITLE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                </div>
+        
+       
+      </section>
+      <section class="services services2 container m80">
+        <h2 >Graphic Courses</h2>
+        <div class="allServices">
+          <div class="service" >
+            <img src="./images/services21.webp" class="imgService" alt="service" />
+            <div class="aboutservice">
+              <div class="head">
+                <h3>Learn python: The Complete Python Programming Course</h3>
+                <div class="Star">
+                  <img src="./images/star.svg" alt="star" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <p class="dec_service">Avinash jain, The Codex</p>
+              <div class="salary">
+                <span class="sall">E£679.99</span>
+                <p>E£1,599.99</p>
+              </div>
+              <a href="checkOut.html" class="btn_page2">Enroll Now</a>
+            </div>
+          </div>
+          <div class="service">
+        
+            <img src="./images/services22.webp" class="imgService" alt="service" />
+            <div class="aboutservice">
+              <div class="head">
+                <h3>Learn python: The Complete Python Programming Course</h3>
+                <div class="Star">
+                  <img src="./images/star.svg" alt="star" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <p class="dec_service">Avinash jain, The Codex</p>
+              <div class="salary">
+                <p>E£1,599.99</p>
+              </div>
+              <a href="checkOut.html" class="btn_page2">Enroll Now</a>
+            </div>
+          </div>
+          <div class="service" >
+            <img src="./images/services23.webp" class="imgService" alt="service" />
+            <div class="aboutservice">
+              <div class="head">
+                <h3>Learn python: The Complete Python Programming Course</h3>
+                <div class="Star">
+                  <img src="./images/star.svg" alt="star" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <p class="dec_service">Avinash jain, The Codex</p>
+              <div class="salary">
+                <p>E£1,599.99</p>
+              </div>
+              <a href="checkOut.html" class="btn_page2">Enroll Now</a>
+            </div>
+          </div>
+          <div class="service" >
+            <img src="./images/services24.webp" class="imgService" alt="service" />
+            <div class="aboutservice">
+              <div class="head">
+                <h3>Learn python: The Complete Python Programming Course</h3>
+                <div class="Star">
+                  <img src="./images/star.svg" alt="star" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <p class="dec_service">Avinash jain, The Codex</p>
+              <div class="salary">
+                <span class="sall">E£679.99</span>
+                <p>E£1,599.99</p>
+              </div>
+              <a href="checkOut.html" class="btn_page2">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services services2 container m80">
+        <h2 >UI UX Courses</h2>
+        <div class="allServices">
+          <div class="service" >
+            <img src="./images/services25.webp" class="imgService" alt="service" />
+            <div class="aboutservice">
+              <div class="head">
+                <h3>Learn python: The Complete Python Programming Course</h3>
+                <div class="Star">
+                  <img src="./images/star.svg" alt="star" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <p class="dec_service">Avinash jain, The Codex</p>
+              <div class="salary">
+                <span class="sall">E£679.99</span>
+                <p>E£1,599.99</p>
+              </div>
+              <a href="checkOut.html" class="btn_page2">Enroll Now</a>
+            </div>
+          </div>
+          <div class="service">      
+            <img src="./images/services26.webp" class="imgService" alt="service" />
+            <div class="aboutservice">
+              <div class="head">
+                <h3>Learn python: The Complete Python Programming Course</h3>
+                <div class="Star">
+                  <img src="./images/star.svg" alt="star" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <p class="dec_service">Avinash jain, The Codex</p>
+              <div class="salary">
+                <p>E£1,599.99</p>
+              </div>
+              <a href="checkOut.html" class="btn_page2">Enroll Now</a>
+            </div>
+          </div>
+          <div class="service" >
+            <img src="./images/services27.webp" class="imgService" alt="service" />
+            <div class="aboutservice">
+              <div class="head">
+                <h3>Learn python: The Complete Python Programming Course</h3>
+                <div class="Star">
+                  <img src="./images/star.svg" alt="star" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <p class="dec_service">Avinash jain, The Codex</p>
+              <div class="salary">
+                <p>E£1,599.99</p>
+              </div>
+              <a href="checkOut.html" class="btn_page2">Enroll Now</a>
+            </div>
+          </div>
+          <div class="service" >
+            <img src="./images/services24.webp" class="imgService" alt="service" />
+            <div class="aboutservice">
+              <div class="head">
+                <h3>Learn python: The Complete Python Programming Course</h3>
+                <div class="Star">
+                  <img src="./images/star.svg" alt="star" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <p class="dec_service">Avinash jain, The Codex</p>
+              <div class="salary">
+                <span class="sall">E£679.99</span>
+                <p>E£1,599.99</p>
+              </div>
+              <a href="checkOut.html" class="btn_page2">Enroll Now</a>
+            </div>
+          </div>
+          <div class="service" >
+            <img src="./images/services27.webp" class="imgService" alt="service" />
+            <div class="aboutservice">
+              <div class="head">
+                <h3>Learn python: The Complete Python Programming Course</h3>
+                <div class="Star">
+                  <img src="./images/star.svg" alt="star" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <p class="dec_service">Avinash jain, The Codex</p>
+              <div class="salary">
+                <span class="sall">E£679.99</span>
+                <p>E£1,599.99</p>
+              </div>
+              <a href="checkOut.html" class="btn_page2">Enroll Now</a>
+            </div>
+          </div>
+          <div class="service" >
+            <img src="./images/services24.webp" class="imgService" alt="service" />
+            <div class="aboutservice">
+              <div class="head">
+                <h3>Learn python: The Complete Python Programming Course</h3>
+                <div class="Star">
+                  <img src="./images/star.svg" alt="star" />
+                  <p>4.8</p>
+                </div>
+              </div>
+              <p class="dec_service">Avinash jain, The Codex</p>
+              <div class="salary">
+                <span class="sall">E£679.99</span>
+                <p>E£1,599.99</p>
+              </div>
+              <a href="checkOut.html" class="btn_page2">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<section class="photosSection  m80">
+
+<h2>Photos Section</h2>
+<div class="allPhoto container">
+    <div class="responsive">
+        <div class="item"><img src="./images/photo1.webp" alt="photosSection"></div>
+        <div class="item"><img src="./images/photo2.webp" alt="photosSection"></div>
+        <div class="item"><img src="./images/photo3.webp" alt="photosSection"></div>
+        <div class="item"><img src="./images/photo2.webp" alt="photosSection"></div>
+        <div class="item"><img src="./images/photo1.webp" alt="photosSection"></div>
+       
+    </div>
+</div>
+</section>
+<section class="testimonials container  m80">
+
+    <h2>Photos Section</h2>
+        <div class="testimonialsSlide">
+            <div class="item">
+<div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    <div class="info_user">
+        <img src="./images/user1.webp" alt="user">
+        <h3>Maria James</h3>
+    </div>
+</div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <div class="info_user">
+                        <img src="./images/user1.webp" alt="user">
+                        <h3>Maria James</h3>
+                    </div>
+                </div>
+                            </div>
+           
+        </div>
+    </section>
+      <section class="faq container m80"> 
+        <h2 class="titleFaq">FAQ</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    When does the course start and finish?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The course starts now and never ends! It is a completely self-paced online course - you decide when you start and when you finish.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How long do I have access to the course?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The course starts now and never ends! It is a completely self-paced online course - you decide when you start and when you finish.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What if I am unhappy with the course?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The course starts now and never ends! It is a completely self-paced online course - you decide when you start and when you finish.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                    How long do I have access to the course?
+                  </button>
+                </h2>
+                <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      The course starts now and never ends! It is a completely self-paced online course - you decide when you start and when you finish.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                    What if I am unhappy with the course?
+                  </button>
+                </h2>
+                <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      The course starts now and never ends! It is a completely self-paced online course - you decide when you start and when you finish.
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+    <footer class="footer2" >
+      <div class="container">
+        <div class="fotter_content">
+          <div class="head">
+              <a href="index.html"><img src="./images/logo.svg" alt="" /></a>
+          </div>
+          
+
+        </div>
+      
+        <div class="copy" style="align-items: self-end; margin-top: 0px; color: black;">
+          <p>
+            ©
+            <a href="https://analytica-tech.com/"
+              >https://analytica-tech.com/</a
+            >
+            , 2019-2022
+          </p>
+          <div class="part" style="align-items: center;margin-top: 0px;">
+  
+            
+            <div class="store" style="margin-bottom: 8px;margin-top: 0px;">
+              <a href=""><img src="./images/app.webp" alt="app store" /></a>
+              <a href=""
+                ><img src="./images/google.webp" alt="google play"
+              /></a>
+            </div>
+            <div class="links_social">
+              <a href="">
+                <img src="./images/facebook2.webp" alt="facebook" />
+              </a>
+
+              <a href="">
+                <img src="./images/linkedin3.webp" alt="instagram" />
+              </a>
+              <a href="">
+                <img src="./images/instagram2.webp" alt="linkedin" />
+              </a>
+              <a href="">
+                <img src="./images/twitter2.webp" alt="twitter" />
+              </a>
+            </div>
+          </div>
+          <p>All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+      $('.responsive').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  centerPadding:20,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows:false,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1.2,
+        slidesToScroll: 1,
+        arrows:false,
+        dots: true,
+       
+      }
+    }
+  
+  ]
+});
+
+
+$('.testimonialsSlide').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  centerPadding:20,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false,
+      }
+    },
+   
+  
+  ]
+});
+    </script>
+  </body>
+</html>
