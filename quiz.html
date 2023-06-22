@@ -1118,8 +1118,45 @@
         <div class="part2">
           <h1>Learn python: The Complete Python Programming Course</h1>
           <h2>Quiz: Gestalt Principles</h2>
+<div class="score">
+  <img src="./images/exam-results.webp" class="score-img" alt="exam-results">
+  <div class="your_score">
+    <h3>Your Score</h3>
+    <h4>15/ <span>20</span></h4>
+    <h5>Great job, <img src="./images/confetti.svg" alt="confetti"></h5>
+    <p>Next time try to focus more and read the question carefully twice.</p>
+  </div>
 
+</div>
           <div class="questions">
+            <div class="question">
+              <div class="titleQuestion">
+               <h3>Quiz Question</h3>
+               <h4>With decreasing attention spans, what type of content is best used to convey a lot of content in a short period of time?</h4>
+              </div>
+              <div class="allfile">
+                <div class="file-container">
+                  <div class="file-title">Attach a File</div>
+                  <input type="file" id="file-input" />
+                </div>
+                <div class="file_load">
+                  <div class="part">
+                    <div class="info_file">
+                      <img src="./images/file_type.webp" class="file_type" alt="file_type">
+                      <div class="dec-file">
+                        <h5>Question 1.pdf</h5>
+                        <h6>1.24 MB</h6>
+                        <p class="file-status"><span><img src="./images/file-status.svg" alt="file-status"></span> Successfully Uploaded</p>
+                      </div>
+                    </div>
+                    <button class="delete-file">
+                      <img src="./images/delete-file.svg" alt="delete">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+           </div>
             <div class="question">
                <div class="titleQuestion">
                 <h3>Quiz Question</h3>
@@ -1569,6 +1606,18 @@
           contantTwo.style.display = "block";
         });
       });
+    </script>
+     <script>
+      const fileInput = document.getElementById('file-input');
+const fileTitle = document.querySelector('.file-title');
+
+fileInput.addEventListener('change', function() {
+  if (this.files && this.files[0]) {
+    fileTitle.textContent = this.files[0].name;
+  } else {
+    fileTitle.textContent = 'Attach a File';
+  }
+});
     </script>
   </body>
 </html>

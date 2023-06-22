@@ -340,6 +340,33 @@ html[dir="rtl"] .about .allAbout .part1 .trusted .headtitle {
 /*start services*/
 .services {
 }
+.services_content{
+  position: relative;
+
+}
+.services_content::after{
+  position: absolute;
+  content: "";
+  width: 272px;
+height: 271.273px;
+  background-image: url('../images/graduate.svg');
+  background-repeat: no-repeat;
+  background-size: 272px;
+top: -22%;
+left: -130px;
+}
+.services_content::before{
+  position: absolute;
+  content: "";
+  width: 230px;
+height: 230px;
+  background-image: url('../images/graduate2.svg');
+  background-repeat: no-repeat;
+  background-size: 230px;
+  top: -15%;
+  right: -80px;
+
+}
 .services .allServices {
   display: flex;
   justify-content: center;
@@ -495,12 +522,45 @@ html[dir="rtl"] .services .allServices .service h5 {
   font-family: "DM Sans2";
   margin-bottom: 12px;
 }
+@media (max-width: 1400px) {
+  .services_content::before {
+   
+    width: 190px;
+    height: 190px;
+    background-size: 190px;
+    top: -5%;
+    right: -10px;
+}
+.services_content::after {
+ 
+  width: 200px;
+  height: 200px;
+  background-size: 200px;
+  top: -8%;
+  left: -90px;
+}
+
+}
 @media (max-width: 1200px) {
   .services .allServices .service {
     min-width: 265px;
   }
 }
 @media (max-width: 768px) {
+  .services_content::before {
+    width: 136px;
+    height: 136px;
+    background-size: 136px;
+    top: -2%;
+    right: 0px;
+}
+.services_content::after {
+  width: 168px;
+  height: 168px;
+  background-size: 168px;
+  top: -7%;
+  left: -30px;
+}
   .services .allServices .service .aboutservice .head h3 {
     font-size: 14px;
   }
@@ -530,8 +590,12 @@ html[dir="rtl"] .services .allServices .service h5 {
 
 /*start Top Categories*/
 .top {
-  background: #728baf;
+  background: #1F99C8;
   padding: 68px 0px 88px;
+  background-image: url('../images/back-top.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .top .headtitle {
   color: #ffffff;
@@ -729,8 +793,9 @@ html[dir=rtl] .iti__country-list {
 
 /*============================footer==========================*/
 footer {
-  color: #ffffff;
-  background: #070223;
+  color: #313131;
+
+background: #1fa8d127;
   padding: 40px 0px 30px;
 }
 .fotter_content {
@@ -749,15 +814,16 @@ footer h1 a {
   font-size: 32px;
   line-height: 42px;
   margin-bottom: 8px;
-  color: var(--white_color);
+  color: #313131;
   display: block;
 }
 footer h1 a:hover {
-  color: var(--white_color);
+  color: #313131;
 }
 footer .part h2 {
   font-size: 14px;
   line-height: 18px;
+  color: #000;
 }
 footer .head p {
   font-size: 16px;
@@ -767,7 +833,7 @@ footer .head p {
 footer .part .contact2 p {
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff;
+  color: #313131;
 }
 footer .part .links {
   display: flex;
@@ -779,13 +845,13 @@ footer .part .links2 {
   gap: 12px;
 }
 footer .part .links a {
-  color: white;
+  color: #313131;
   text-decoration-line: underline;
   font-size: 14px;
   font-family: "DM Sans3";
 }
 footer .part .links a:hover {
-  color: var(--white_color);
+  color: #313131;
 }
 footer .part .contact2 {
   display: flex;
@@ -829,7 +895,7 @@ footer .copy p,
 footer .copy p a {
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
+  color: #313131;
   font-family: "DM Sans3";
   text-align: center;
 }
@@ -841,8 +907,9 @@ footer .part .langFooter {
   display: flex;
   align-items: center;
   gap: 8px;
+  height: 38px;
   padding: 10px 26px;
-  border: 1px solid #ffffff;
+  border: 1px solid #313131;
   border-radius: 5px;
   background-color: transparent;
 }
@@ -855,7 +922,7 @@ footer .part .langFooter p {
   font-family: "DM Sans2";
   line-height: 19px;
 
-  color: #ffffff;
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -1195,14 +1262,14 @@ html[dir="rtl"] .coursesDetails .part1 .content .contantCart {
   line-height: 21px;
   color: #3f3f3f;
 }
-.coursesDetails .part2 .part .skills {
+.skills {
 }
-.coursesDetails .part2 .part .skills ul {
+.skills ul {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
-.coursesDetails .part2 .part .skills ul li {
+.skills ul li {
   padding: 8px 22px;
   background: #d0ddff;
   font-size: 14px;
@@ -1217,9 +1284,9 @@ html[dir="rtl"] .coursesDetails .part1 .content .contantCart {
   color: #3f3f3f;
 }
 
-.coursesDetails .part2 .part .course_Content {
+.course_Content {
 }
-.coursesDetails .part2 .part .course_Content h3 {
+.course_Content h3 {
   font-size: 14px;
   line-height: 18px;
   font-family: "DM Sans3";
@@ -1227,44 +1294,44 @@ html[dir="rtl"] .coursesDetails .part1 .content .contantCart {
   color: #686868;
 }
 
-.coursesDetails .part2 .part .course_Content .all_Course_Content {
+.course_Content .all_Course_Content {
   border: 1px solid #d1d1d1;
   padding: 4px 20px;
 }
-.coursesDetails .part2 .part .course_Content .all_Course_Content h2 {
+.course_Content .all_Course_Content h2 {
   display: flex;
   justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
   align-items: center;
 }
-.coursesDetails .part2 .part .course_Content .all_Course_Content h2 button {
+.course_Content .all_Course_Content h2 button {
   gap: 8px;
   padding: 24px 0px;
   box-shadow: none;
   max-width: fit-content;
 }
-.coursesDetails .part2 .part .course_Content .all_Course_Content h2 p {
+.course_Content .all_Course_Content h2 p {
   font-size: 14px;
   line-height: 18px;
 
   color: #686868;
 }
-.coursesDetails .part2 .part .course_Content .all_Course_Content ul {
+.course_Content .all_Course_Content ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-bottom: 20px;
 }
-.coursesDetails .part2 .part .course_Content .all_Course_Content ul li {
+.course_Content .all_Course_Content ul li {
   display: flex;
   gap: 8px;
 }
-.coursesDetails .part2 .part .course_Content .all_Course_Content ul li img {
+.course_Content .all_Course_Content ul li img {
   width: 16px;
   height: 16px;
 }
-.coursesDetails .part2 .part .course_Content .all_Course_Content ul li p {
+.course_Content .all_Course_Content ul li p {
   font-size: 14px;
   line-height: 18px;
 
@@ -1557,6 +1624,38 @@ html[dir="rtl"] .coursesDetails .part3 .img_box {
   gap: 30px 180px;
   flex-wrap: wrap;
 }
+.InstractorInfo {}
+.InstractorInfo  .achievement{
+  display: flex;
+  gap: 10px;
+}
+.InstractorInfo  .achievement .part{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 10px;
+  border: 1px solid  #E0E0E0;
+  height: 82px;
+  flex: 1; 
+}
+.InstractorInfo  .achievement .part img{
+  width: 33.52px;
+height: 33.52px;
+margin: auto;
+}
+.InstractorInfo  .achievement .part h5{
+  font-size: 20px;
+font-family: "DM Sans";
+
+}
+.InstractorInfo  .achievement .part h5 span{
+  color: #606060;
+  font-size: 15px;
+font-family: "DM Sans3";
+
+}
 .InstractorInfo .part1 {
   flex: 1;
 }
@@ -1564,13 +1663,26 @@ html[dir="rtl"] .coursesDetails .part3 .img_box {
   display: flex;
   gap: 16px;
   align-items: center;
+  position: relative;
   margin-bottom: 26px;
 }
 .InstractorInfo .part1 .info .person {
   width: 148px;
-
+position: relative;
   height: 148px;
   border-radius: 50%;
+}
+.InstractorInfo .part1 .info::before {
+  position: absolute;
+  content: "";
+  width: 222px;
+  height: 192px;
+  background-image: url('../images/graduate.svg');
+  background-repeat: no-repeat;
+  background-size: 222px;
+  top: -114px;
+  transform: rotate(10deg);
+  left: -72px;
 }
 .InstractorInfo .part1 .info .info_about {
 }
@@ -1639,6 +1751,19 @@ html[dir="rtl"] .coursesDetails .part3 .img_box {
   }
 }
 @media (max-width: 768px) {
+  .InstractorInfo .achievement .part img {
+    width: 28px;
+    height: 28px;
+}
+.InstractorInfo .achievement .part h5 {
+  font-size: 18px;
+  
+}
+.InstractorInfo .part1 .info::before {
+  background-size: 190px;
+  top: -80px;
+  left: -62px;
+}
   .InstractorInfo .part1 .info .info_about h2 {
     font-size: 18px;
   }
@@ -1891,7 +2016,7 @@ html[dir="rtl"] .become2 .img_become {
 .form_page label {
   font-size: 16px;
   line-height: 21px;
-  color: #2e1f26;
+  color: black;
   margin-bottom: 8px;
 }
 
@@ -2348,9 +2473,7 @@ color: #5F5D5D;
   margin-bottom: 16px;
   margin: 0 0 16px;
 }
-.sign form div{
-  padding: 0;
-}
+
 .sign form .btn_page{
   width: 98%;
   height: 50px;
@@ -3074,6 +3197,43 @@ margin-bottom: 12px;
   font-size: 20px;
   line-height: 26px;
 }
+.videoCourse .headVideo .part2 .assignments{
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.videoCourse .headVideo .part2 .assignments h3{
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.videoCourse .headVideo .part2 .assignments form{}
+.file-container {
+  position: relative;
+  display: inline-block;
+  min-width: 100%;
+  height: 76px;
+  border: 1px dashed #9FA3FF;
+background: #EDF8FF;
+}
+
+.file-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--main_color);
+  font-size: 18px;
+text-decoration-line: underline;
+}
+
+#file-input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
 .videoCourse .headVideo .part2 .lectureImg{
   
   width: 100%;
@@ -3252,12 +3412,65 @@ color: #686868;
 
 .videoCourse .headVideo .part1 .contantTwo ul li .infoChapter .form-check{}
 .videoCourse .headVideo .part1 .contantTwo ul li .btn_page2{}
+.videoCourse .headVideo .part2 .score{
+  max-width:  782px;
+  width:  100%;
+  margin: 0px auto;
+padding: 20px 24px;
+border-radius: 10px;
+background: #E3F7FF;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 28px;
 
+}
+.videoCourse .headVideo .part2 .score .score-img{
+  width: 180px;
+height: auto;
+max-width: 60%;
+
+}
+.videoCourse .headVideo .part2 .score .your_score{
+  flex: 1;
+  
+}
+.videoCourse .headVideo .part2 .score .your_score h3{
+  font-size: 14px;
+  margin-bottom: 0;
+  font-family: "DM Sans3";
+
+}
+.videoCourse .headVideo .part2 .score .your_score h4{
+  font-size: 48px;
+  color: var(--main_color);
+  font-family: "DM Sans";
+
+  
+}
+.videoCourse .headVideo .part2 .score .your_score h4 span{
+  color: #3F3F3F;
+  font-family: "DM Sans3";
+  font-size: 24px;
+}
+.videoCourse .headVideo .part2 .score .your_score h5{
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.videoCourse .headVideo .part2 .score .your_score h5 img{
+  width: 20px;
+height: 20px;
+margin: 0px 4px;
+}
+.videoCourse .headVideo .part2 .score .your_score p{
+  font-size: 16px;
+}
 /*question*/
 .videoCourse .headVideo .part2 .questions{
   display: flex;
   flex-direction: column;
   gap: 28px;
+  margin-top: 50px;
 }
 .videoCourse .headVideo .part2 .questions .btn_page{
   width: 228px;
@@ -3268,6 +3481,85 @@ color: #686868;
   background: #FFFFFF;
 border: 1px solid #D1D1D1;
 }
+.videoCourse .headVideo .part2 .questions .question .allfile{
+  max-width: 890px;
+  padding: 0px 18px;
+  margin-bottom: 22px;
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load .part{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .info_file{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .info_file .file_type{
+  width: 58px;
+height: auto;
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .info_file .dec-file{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .info_file .dec-file h5{
+  color: #3F3F3F;
+font-size: 13px;
+margin: 0;
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .info_file .dec-file h6{
+  color: #686868;
+  margin: 0;
+font-size: 12px;
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .info_file .dec-file p{
+  color: #686868;
+font-size: 12px;
+position: relative;
+padding-left: 18px;
+}
+html[dir=rtl] .videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .info_file .dec-file p{
+padding-left: 0;
+padding-right: 18px;
+
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .info_file .dec-file p span{
+  position: absolute;
+  content: "";
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+
+}
+html[dir=rtl] .videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .info_file .dec-file p span{
+  left: auto;
+  right: 0;
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .info_file .dec-file p span img{
+  width: 100%;
+  height: 100%;
+}
+.videoCourse .headVideo .part2 .questions .question .allfile .file_load .part .delete-file{
+  background-color: transparent;
+  border: none;
+}
+
+.videoCourse .headVideo .part2 .questions .question .allfile{}
 .videoCourse .headVideo .part2 .questions .question .titleQuestion{
 padding: 0px 18px ;
 }
@@ -3351,6 +3643,23 @@ line-height: 21px;
 .videoCourse .headVideo .part2 h2 {
   font-size: 16px;
 }
+.videoCourse .headVideo .part2 .score {
+ 
+  padding: 16px 14px;
+ 
+  gap: 16px;
+}
+.videoCourse .headVideo .part2 .score .score-img {
+  width: 110px;
+ 
+}
+.videoCourse .headVideo .part2 .score .your_score h4 {
+  font-size: 38px;
+  
+}
+se .headVideo .part2 .score .your_score h5 {
+  font-size: 18px;
+}
 }
 /*===========================================end videoCourse ==================*/
 /*modal*/
@@ -3426,6 +3735,7 @@ margin: 48px auto 30px;
 .instructor_head{
   text-align: center;
   color: white;
+
   padding: 0px 14px;
   position: relative;
   height: 455px;
@@ -3445,7 +3755,7 @@ margin-bottom: 22px;
 max-width: 962px;
 font-family: "DM Sans";
 }
-.instructor_head p{
+.instructor_head .head_p{
   font-size: 24px;
   line-height: 31px;
   margin-bottom: 54px;
@@ -3455,6 +3765,35 @@ font-family: "DM Sans";
   width: 366px;
 height: 60px;
 margin: 0px auto;
+font-size: 20px;
+}
+.btn4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.instructor_head2 .btn_page3,.instructor_head2 .btn_page4{
+  width: 306px;
+height: 60px;
+margin: 0px auto;
+font-size: 20px;
+}
+.instructor_head2 .btn_page4{
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 58px;
+  justify-content: center;
+  gap: 8px;
+border: 2px solid #FFF;
+}
+.instructor_head2 .btn_page4 p{
+  color: #FFF;
+font-size: 20px;
+font-family: DM Sans;
+font-weight: 700;
 }
 @media(max-width:768px){
   .instructor_head h1 {
@@ -3463,7 +3802,7 @@ margin: 0px auto;
     margin-bottom: 16px;
    
 }
-.instructor_head p {
+.instructor_head .head_p {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 26px;
@@ -3472,6 +3811,10 @@ margin: 0px auto;
 .instructor_head .btn_page3 {
   width: 260px;
   height: 56px;
+}
+.instructor_head .btn_page4 {
+  width: 260px;
+  height: 54px;
 }
 }
 
@@ -3520,9 +3863,35 @@ line-height: 31px;
 margin-bottom: 16px;
 font-family: "DM Sans";
 }
-.instructor_about .content .instructor_info p{
+.instructor_about .content .instructor_info p,.instructor_about3 .content .instructor_info h4{
   font-size: 20px;
 line-height: 28px;
+font-family: "DM Sans3";
+
+}
+
+.instructor_about3 .content .instructor_info h5{
+  font-size: 16px;
+  position: relative;
+padding-left: 28px;
+}
+html[dir=rtl] .instructor_about3 .content .instructor_info h5{
+padding-left: 0px;
+padding-right: 28px;
+}
+.instructor_about3 .content .instructor_info h5::before{
+position: absolute;
+content: "";
+height: 0.8px ;
+width: 20px;
+background-color: black;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+}
+html[dir=rtl]  .instructor_about3 .content .instructor_info h5::before{
+  left: auto;
+  right: 0;
 }
 .instructor_about .content .part1{
   max-width: 522px;
@@ -3873,14 +4242,17 @@ z-index: 50;
   height: 50px;
   margin-bottom: 24px;
 }
-.coursesDetails2 .part2 .part .skills ul li{
+.skills2{
+  margin-top: 12px;
+}
+.coursesDetails2 .part2 .part .skills  ul li,.skills2  ul li{
   background: #C74A76;
   color: white;
   font-family: "DM Sans3";
 }
-.coursesDetails2 .part2 .part .course_Content .all_Course_Content h2 button ,.coursesDetails2 .part2 .part .course_Content .all_Course_Content h2 ,
-.coursesDetails2 .part2 .part .course_Content .all_Course_Content ,.coursesDetails2 .part2 .part .course_Content .all_Course_Content .accordion-body ,
-.coursesDetails2 .part2 .part .course_Content .all_Course_Content .accordion-item{
+.course_Content .all_Course_Content h2 button ,.course_Content .all_Course_Content h2 ,
+.course_Content .all_Course_Content ,.course_Content .all_Course_Content .accordion-body ,
+.course_Content .all_Course_Content .accordion-item{
   background: #FFF2F6;
 }
 .coursesDetails2 .accordion-item {
@@ -3890,8 +4262,14 @@ z-index: 50;
 .coursesDetails2 .part2{
   margin-bottom: 90px;
 }
-.coursesDetails .part2 .part .course_Content .all_Course_Content{
+.course_Content .all_Course_Content{
   border: none;
+}
+.course_Content2 .headDetails{
+  font-size: 24px;
+  text-transform: uppercase;
+   text-align: center;
+margin-bottom: 18px;
 }
 /*end  coursesDetails2*/
 
@@ -3924,6 +4302,10 @@ z-index: 50;
 }
 .footer2 .part{
   order: -1;
+}
+.course_Content2 .headDetails {
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 }
 

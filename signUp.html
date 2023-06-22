@@ -9,6 +9,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
       integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
@@ -1111,6 +1116,7 @@
         <input type="search" placeholder="Search For ......." />
       </form>
     </nav>
+
     <section class="sign container">
       <div class="box_sign">
         <h2 class="title_sign">Sign up and start learning</h2>
@@ -1158,7 +1164,6 @@
               placeholder="Enter Your Email"
             />
           </div>
-
           <div class="col-md-12">
             <label for="inputpassword" class="form-label">Password </label>
             <input
@@ -1169,6 +1174,77 @@
             />
           </div>
 
+          <div class="col-md-12">
+            <label for="inputPhone " class="form-label"
+              >Mobile Number
+            </label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+                value=""
+              />
+          </div>
+          <div class="col-md-12">
+            <label for="inputPhone " class="form-label"
+              >WhatsApp Number
+            </label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone2"
+                name="phone"
+                placeholder="Phone Number"
+                value=""
+              />
+          </div>
+          <div class="col-md-12">
+            <label for="inputCountry" class="form-label"
+              >Country</label
+            >
+            <select id="inputCountry" class="form-select">
+              <option selected aria-placeholder="Select The Country">
+                Select Your Country
+              </option>
+              <option>EG</option>
+              <option>EUR</option>
+            </select>
+          </div>
+  <div class="col-md-12">
+            <label for="inputAge" class="form-label">Age</label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputAge"
+              placeholder="Enter Your Age"
+            />
+          </div>
+          <div class="col-md-12">
+            <label for="inputGender" class="form-label"
+              >Gender</label
+            >
+            <select id="inputGender" class="form-select">
+              <option selected aria-placeholder="Select The Gender">
+                Select Your Gender
+              </option>
+              <option>male</option>
+              <option>female</option>
+            </select>
+          </div>
+          <div class="col-md-12">
+            <label for="inputProfession" class="form-label"
+              >What profession are you learning for?</label
+            >
+            <select id="inputProfession" class="form-select">
+              <option selected aria-placeholder="Select The Profession">
+                Select Your Profession
+              </option>
+              <option>Profession1</option>
+              <option>Profession2</option>
+            </select>
+          </div>
           <input type="submit" value="Sign Up" class="btn_page" />
         </form>
         <div class="haveAccount">
@@ -1176,6 +1252,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="container">
         <div class="fotter_content">
@@ -1262,5 +1339,32 @@
         });
       });
     </script>
+      <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInputField2 = document.querySelector("#phone2");
+           
+           function getIp(callback) {
+      fetch('https://ipinfo.io/41.47.128.120?token=6f23784d8e0441', { headers: { 'Accept': 'application/json' }})
+        .then((resp) => resp.json())
+        .catch(() => {
+          return {
+            country: "eg",
+          };
+        })
+        .then((resp) => callback(resp.country));
+       }
+       const phoneInput = window.intlTelInput(phoneInputField, {
+      initialCountry: "auto",
+      geoIpLookup: getIp,
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+     });
+     const phoneInput2 = window.intlTelInput(phoneInputField2, {
+      initialCountry: "auto",
+      geoIpLookup: getIp,
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+     });
+     </script>
   </body>
 </html>
