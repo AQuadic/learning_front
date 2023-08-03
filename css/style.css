@@ -1023,10 +1023,19 @@ html[dir="rtl"] .form-check .form-check-input {
   display: flex;
   gap: 10px;
 }
+.courses .part2 .fillter_Courses .item .imageLink{
+  width: 270px;
+
+}
+.courses .part2 .fillter_Courses .item .imageLink img{
+  width: 100%;
+
+}
 .courses .part2 .fillter_Courses .item .imgService {
   width: 270px;
   border-radius: 10px;
   object-fit: fill;
+  min-height: 100%;
 }
 .courses .part2 .fillter_Courses .item .aboutservice {
   display: flex;
@@ -1131,6 +1140,10 @@ html[dir="rtl"] .form-check .form-check-input {
   }
   .courses .part2 .fillter_Courses .item .imgService {
     width: 80%;
+  }
+  .courses .part2 .fillter_Courses .item .imageLink{
+    width: 80%;
+  
   }
 }
 /*============================ end courses==========================*/
@@ -4288,6 +4301,7 @@ z-index: 50;
   gap: 200px;
   flex-wrap: wrap;
 }
+
 .coursesDetails2 .part2 .part .attach .all_attach .part-attach .btn_page3{
   width: 134px;
 height: 34px;
