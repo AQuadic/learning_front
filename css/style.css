@@ -72,16 +72,16 @@ html::-webkit-scrollbar-track {
     transform: translate(0, 0);
   }
   20% {
-    transform: translate(-2px, -2px);
+    transform: translate(-1px, -1px);
   }
   40% {
-    transform: translate(2px, 2px);
+    transform: translate(1px, 1px);
   }
   60% {
-    transform: translate(-2px, 2px);
+    transform: translate(-1px, 1px);
   }
   80% {
-    transform: translate(2px, -2px);
+    transform: translate(1px, -1px);
   }
   100% {
     transform: translate(0, 0);
@@ -262,7 +262,7 @@ html[dir="rtl"] .headtitle::before {
   width: 366px;
   height: 60px;
   margin-bottom: 24px;
-  animation: vibrate 0.5s linear 5s infinite;
+  /*animation: vibrate 2s linear 5s infinite;*/
 }
 .about .allAbout .part1 .trusted {
 }
