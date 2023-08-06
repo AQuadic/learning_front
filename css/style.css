@@ -72,16 +72,16 @@ html::-webkit-scrollbar-track {
     transform: translate(0, 0);
   }
   20% {
-    transform: translate(-2px, -2px);
+    transform: translate(-1px, -1px);
   }
   40% {
-    transform: translate(2px, 2px);
+    transform: translate(1px, 1px);
   }
   60% {
-    transform: translate(-2px, 2px);
+    transform: translate(-1px, 1px);
   }
   80% {
-    transform: translate(2px, -2px);
+    transform: translate(1px, -1px);
   }
   100% {
     transform: translate(0, 0);
@@ -262,7 +262,7 @@ html[dir="rtl"] .headtitle::before {
   width: 366px;
   height: 60px;
   margin-bottom: 24px;
-  animation: vibrate 0.5s linear 5s infinite;
+  /*animation: vibrate 2s linear 5s infinite;*/
 }
 .about .allAbout .part1 .trusted {
 }
@@ -1022,10 +1022,19 @@ html[dir="rtl"] .form-check .form-check-input {
   display: flex;
   gap: 10px;
 }
+.courses .part2 .fillter_Courses .item .imageLink{
+  width: 270px;
+
+}
+.courses .part2 .fillter_Courses .item .imageLink img{
+  width: 100%;
+
+}
 .courses .part2 .fillter_Courses .item .imgService {
   width: 270px;
   border-radius: 10px;
   object-fit: fill;
+  min-height: 100%;
 }
 .courses .part2 .fillter_Courses .item .aboutservice {
   display: flex;
@@ -1130,6 +1139,10 @@ html[dir="rtl"] .form-check .form-check-input {
   }
   .courses .part2 .fillter_Courses .item .imgService {
     width: 80%;
+  }
+  .courses .part2 .fillter_Courses .item .imageLink{
+    width: 80%;
+  
   }
 }
 /*============================ end courses==========================*/
@@ -4506,7 +4519,7 @@ html[dir="rtl"] .faq .accordion .accordion-button::before {
   gap: 200px;
   flex-wrap: wrap;
 }
-.coursesDetails2 .part2 .part .attach .all_attach .part-attach .btn_page3 {
+.coursesDetails2 .part2 .part .attach .all_attach .part-attach .btn_page3{
   width: 134px;
   height: 34px;
   border-radius: 5px;
